@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+        function CalculateAge(){
+            var carentYear = new Date().getUTCFullYear();
+            var age = carentYear - document.getElementById('txtYear').value;
+            document.getElementById('txtAge').value = age;
+        }
+        //var myArray = [];
+        //var myArray = [10, 20, 30];
+        //var myArray = new Array(3);
+        //var myArray = new Array(10,20,30);
+
+
+        //var myArray = [];
+        //var myArray = [10, 20, 30, 40];
+        //document.writeln("First Element:" + myArray[0]);
+        //document.writeln("First Element:" + myArray[myArray.length-2]+"<br/>");
+        //document.write(myArray.length);
+
+        //var myArray = [];
+        //myArray[0] = 10;
+        //myArray[0] = 20;
+        //myArray[0] = 30;
+
+
+        //var myarry = ["Rahim", "Karim", "Alom"];
+        //var sorted = myarry.sort();
+        //document.write(sorted);
+
+        //var myarry = [1, 2, 5, 10, 15, 20, 25];
+        //var sorted = myarry.sort(function (a, b) { return a - b }).reverse();
+        //document.write(sorted + "<br/>");
+
+        //var myarry = [1, 2,  10, 11, 16, 17, 18, 29];
+        ////myarry.splice(2, 2, 3);
+        //myarry.splice(2, 1, "Faisal");
+        //document.write(myarry);
+
+        var myarry = ["Faisal", "Faisal", "Kalam", "Monir", "Jony","Faisal","faisal","Rony",];
+        var result = myarry.filter(function (value, index, array) { return array.indexOf(value) == index; });
+        document.write(result);
+
+
+
+        //var myarry = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        //function isEven(value, index, arry) {
+        //    if (value % 2 == 0) {
+        //        return true;
+        //    }
+        //    else {
+        //        return false;
+        //    }
+
+        //}
+
+    </script>
+</head>
+<body>
+    <!--<div>
+        Day:<input type="text"id="txtday" /><br />
+        Month:<input type="text" id="txtmonth" /><br />
+        Year:<input type="text" id="txtYear" /><br />
+        <input type="button" value="Calculate Age" onclick="CalculateAge()" /><br />
+        <input id="txtAge" type="text"/>
+    </div>-->
+</body>
+</html>
