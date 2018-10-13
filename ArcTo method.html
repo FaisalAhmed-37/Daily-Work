@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+        canvas{
+             border:4px solid red;
+}
+</style>
+</head>
+<body>
+<canvas id="myCanvas" width="900" height="600">
+</canvas>
+<script>
+var canvas = document.getElementById('myCanvas')
+var ctx = canvas.getContext('2d');
+ ctx.strokeStyle = 'gray';
+ ctx.lineWidth = 1;
+ ctx.beginPath();
+ ctx.moveTo(200, 200);
+ ctx.lineTo(300, 500);
+ ctx.lineTo(500, 300);
+ ctx.stroke();
+ ctx.strokeStyle = 'black';
+ ctx.lineWidth = 5;
+ ctx.beginPath();
+ ctx.moveTo(200, 200);
+ ctx.arcTo(300, 400, 500, 200, 50);
+ ctx.stroke();
+
+var canvas = document.getElementById('myCanvas')
+ , ctx = canvas.getContext('2d');
+ ctx.strokeStyle = 'gray';
+ ctx.lineWidth = 1;
+ ctx.beginPath();
+ ctx.moveTo(300, 200);
+ ctx.lineTo(400, 500);
+ ctx.lineTo(600, 300);
+ ctx.stroke();
+ ctx.strokeStyle = 'black';
+ ctx.lineWidth = 5;
+ ctx.beginPath();
+ ctx.moveTo(300, 200);
+ ctx.arcTo(400, 500, 600, 300, 300);
+ ctx.stroke();
+</script>
+</body>
+</html>

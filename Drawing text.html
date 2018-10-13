@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+        canvas{
+             border:4px solid red;
+}
+</style>
+</head>
+<body>
+<canvas id="myCanvas" width="900" height="600">
+</canvas>
+<script>
+var canvas = document.getElementById('myCanvas')
+ var ctx = canvas.getContext('2d');
+ ctx.strokeStyle = 'magenta';
+ ctx.fillStyle = 'blue';
+ ctx.lineWidth = 3;
+ ctx.font = "bold 120pt TimesNewRoman";
+ ctx.beginPath();
+ ctx.moveTo(100, 300);
+ ctx.lineTo(700, 300);
+ ctx.stroke();
+ ctx.strokeStyle = 'blue';
+ ctx.fillText("Hello", 400, 300);
+ ctx.strokeText("Hello", 400, 300);
+</script>
+</body>
+</html>
