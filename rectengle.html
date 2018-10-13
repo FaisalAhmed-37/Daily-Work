@@ -1,0 +1,39 @@
+<html>
+<head>
+<style>
+        canvas{
+             border:4px solid red;
+}
+</style>
+</head>
+<body>
+<canvas id="myCanvas" width="900" height="600">
+
+</canvas>
+<script>
+
+ 
+    
+var canvas = document.getElementById('myCanvas')         
+var ctx = canvas.getContext('2d')         
+var offset = 15         
+var clearOffset = 30         
+var pushDownOffset = 10         
+var height = 50         
+var width = 100         
+var count = 4 
+var i = 0; 
+ 
+    for (i = 0; i < count; i++) {        
+ctx.fillRect(i * (offset + width) + offset, offset, width, height);         
+ctx.clearRect(i * (offset + width) + (clearOffset / 2) + offset,             
+offset + (clearOffset / 2) + pushDownOffset,             
+width - clearOffset, height - clearOffset)         
+ctx.strokeRect(i * (offset + width) + offset,            
+(2 * offset) + height, width, height);     
+} 
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+        canvas{
+             border:5px solid blue;
+}
+</style>
+</head>
+<body>
+<canvas id="myCanvas" width="800" height="600">
+
+</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+var grd = ctx.createRadialGradient(75,50,100,90,60,30);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"yellow");
+
+
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+
+var grd = ctx.createRadialGradient(175,200,100,90,60,40);
+grd.addColorStop(0,"blue");
+grd.addColorStop(1,"red");
+
+ctx.fillStyle = grd;
+ctx.fillRect(50,110,150,80);
+
+var grd = ctx.createLinerGradient(100,100,200,0);
+grd.addColorStop(0,"green");
+grd.addColorStop(1,"pink");
+
+ctx.fillStyle = grd;
+ctx.fillRect(80,200,50,110);
+
+</script>
+</body>
+</html>

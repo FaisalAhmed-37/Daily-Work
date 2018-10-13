@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+        canvas{
+             border:4px solid red;
+}
+</style>
+</head>
+<body>
+<img id="love" src = "s.png" height="40" width="40" /> <br/>
+<canvas id="myCanvas" width="700" height="560">
+
+</canvas>
+<button onclick="draw('repeat')">Repeat</button>
+<button onclick="draw('no-repeat')">No-Repeat</button>
+<script>
+function draw(direction) {
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.clearRect(0,0,c.width,c.height);
+var img = document.getElementById("love")
+var pat = ctx.createPattern(img,direction);
+ctx.rect(10,0,500,650);
+ctx.fillStyle = pat;
+ctx.fill();
+}
+</script>
+
+</body>
+</html>
