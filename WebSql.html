@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body onload="createWeb()">
+    <script>
+        function createWeb() {
+            var db = openDatabase('Library', '1.0', 'My Library)', 5 * 1024 * 1024, callback());
+            db.transaction(function (tx) {
+                tx.executeSql('CREATE TABLE IF NOT EXISTS TEST(id integer primary key autoincrement,name text)');
+                tx.executeSql('INSERT INTO TEST (name) VALUES ("ZAKIR")');
+            });
+        }
+        function callback() {
+            alert("Web SQL Database Created");
+        }
+        //adding Table
+        //function CreateTable(transaction) {
+        //    transaction.executeSql("create table if not exists authors(id integer primary key autoincrement, firstName text, dateCreated timestamp default(datetime('now','localtime')))");
+        //}
+    </script>
+</body>
+</html>
