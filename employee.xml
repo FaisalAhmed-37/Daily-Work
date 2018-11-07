@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE company [<!ELEMENT company (employee)*>
+<!ATTLIST employee eid CDATA "e1">
+<!ELEMENT employee (name,address,phone,salary)>
+<!ELEMENT name (#PCDATA)*>
+<!ELEMENT address (#PCDATA)*>
+<!ELEMENT phone (#PCDATA)*>
+<!ELEMENT salary (#PCDATA)*>
+]>
+<company>
+  <employee eid ="e1">
+    <name>Name: Faisal Ahmed</name>
+    <address>Address: Dhaka</address>
+    <phone>Phone: 01865465455</phone>
+    <salary>Salary: 50,000</salary>
+  </employee>
+    <employee eid ="e2">
+    <name>Name: Faisal Hossain</name>
+    <address>Address: Jessore</address>
+    <phone>Phone: 01955465455</phone>
+    <salary>Salary: 45,000</salary>
+  </employee>
+  <employee eid ="e3">
+    <name>Name: Saddam Hosain</name>
+    <address>Address: Narayongonj</address>
+    <phone>Phone: 01654654525</phone>
+    <salary>Salary: 30,000</salary>
+  </employee>
+  <employee eid ="e4">
+    <name>Name: Ruhul amin DB Bin Kasem</name>
+    <address>Address: Bogura</address>
+    <phone>Phone: 01754655455</phone>
+    <salary>Salary: 24,500</salary>
+  </employee>
+  <employee eid ="e5">
+    <name>Name: Kajal sheak</name>
+    <address>Address: Rajshahi</address>
+    <phone>Phone: 01655465455</phone>
+    <salary>Salary: 32,222</salary>
+  </employee>
+  <employee eid ="e6">
+    <name>Name: Faisal Ahmed</name>
+    <address>Address: Dhaka</address>
+    <phone>Phone: 01865465455</phone>
+    <salary>Salary: 50,000</salary>
+  </employee>
+  <employee eid ="e7">
+    <name>Name: Faisal Hossain</name>
+    <address>Address: Jessore</address>
+    <phone>Phone: 01955465455</phone>
+    <salary>Salary: 45,000</salary>
+  </employee>
+  <employee eid ="e8">
+    <name>Name: Saddam Hosain</name>
+    <address>Address: Narayongonj</address>
+    <phone>Phone: 01654654525</phone>
+    <salary>Salary: 30,000</salary>
+  </employee>
+  <employee eid ="e9">
+    <name>Name: Ruhul amin DB Bin Kasem</name>
+    <address>Address: Bogura</address>
+    <phone>Phone: 01754655455</phone>
+    <salary>Salary: 24,500</salary>
+  </employee>
+  <employee eid ="e10">
+    <name>Name: Kajal sheak</name>
+    <address>Address: Rajshahi</address>
+    <phone>Phone: 01655465455</phone>
+    <salary>Salary: 32,222</salary>
+  </employee>
+</company>

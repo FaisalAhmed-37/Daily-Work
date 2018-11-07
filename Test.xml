@@ -1,9 +1,71 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<address>
-     <name>
-          <Faisal>Name: Md.Faisal Ahmed</Faisal>
-          <Adresss>Adress: Shologhar,Sreenagar,Munshigonj,Dhaka</Adresss>
-          <Phone>Phone: 01900221140,01571773713</Phone>
-          <Mail>E-mail: AhmedFaisal@gamail.com</Mail>
-     </name>
-</address>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE school [<!ELEMENT school (student)*>
+<!ATTLIST student sid CDATA "s1">
+<!ELEMENT student (name,address,phone,mail)>
+<!ELEMENT name (#PCDATA)*>
+<!ELEMENT address (#PCDATA)*>
+<!ELEMENT phone (#PCDATA)*>
+<!ELEMENT mail (#PCDATA)*>
+]>
+<school>
+  <student sid ="s1">
+    <name>Faisal Ahmed</name>
+    <address>Dhaka</address>
+    <phone>01865465455</phone>
+    <mail>ahmedFaisal@gmail.com</mail>
+  </student>
+  <student sid ="s2">
+    <name>Faisal Hossain</name>
+    <address>Jessore</address>
+    <phone>01955465455</phone>
+    <mail>ahmedhossin@gmail.com</mail>
+  </student>
+  <student sid ="s3">
+    <name>Saddam Hosain</name>
+    <address>Narayongonj</address>
+    <phone>01654654525</phone>
+   <mail>Saddamhossain@gmail.com</mail>
+  </student>
+  <student sid ="s4">
+    <name>Ruhul amin</name>
+    <address>Bogura</address>
+    <phone>0175465455</phone>
+   <mail>Ruhukljhbl@gmail.com</mail>
+  </student>
+  <student sid ="s5">
+    <name>Kajal sheak</name>
+    <address>Rajshahi</address>
+    <phone>01655465455</phone>
+   <mail>kajalssjhats@gmail.com</mail>
+  </student>
+ <student sid ="s6">
+    <name>Faisal Ahmed</name>
+    <address>Dhaka</address>
+    <phone>01865465455</phone>
+    <mail>ahmedFaisal@gmail.com</mail>
+  </student>
+  <student sid ="s7">
+    <name>Faisal Hossain</name>
+    <address>Jessore</address>
+    <phone>01955465455</phone>
+    <mail>ahmedhossin@gmail.com</mail>
+  </student>
+  <student sid ="s8">
+    <name>Saddam Hosain</name>
+    <address>Narayongonj</address>
+    <phone>01654654525</phone>
+   <mail>Saddamhossain@gmail.com</mail>
+  </student>
+  <student sid ="s9">
+    <name>Ruhul amin</name>
+    <address>Bogura</address>
+    <phone>0175465455</phone>
+   <mail>Ruhukljhbl@gmail.com</mail>
+  </student>
+  <student sid ="s10">
+    <name>Kajal sheak</name>
+    <address>Rajshahi</address>
+    <phone>01655465455</phone>
+   <mail>kajalssjhats@gmail.com</mail>
+  </student>
+</school>

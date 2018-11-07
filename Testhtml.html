@@ -9,27 +9,27 @@
                     myFunction(this)
                 }
             };
-            xmlhttp.open("GET", "employee.xml", true);
+            xmlhttp.open("GET", "student.xml", true);
             xmlhttp.send();
         }
 
         function myFunction(xml) {
             var x, i, xmlDoc, table;
             xmlDoc = xml.responseXML;
-            table = " ";
-            x = xmlDoc.getElementsByTagName("employee")
+            table = "<tr><th>Name</th><th>address</th><th>phone</th><th>mail</th></tr>";
+            x = xmlDoc.getElementsByTagName("student")
             for (i = 0; i < x.length; i++) {
-                table +=
-                    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue + "<br/>" +
-
-                    x[i].getElementsByTagName("address")[0].childNodes[0].nodeValue + "<br/>" +
-
-                    x[i].getElementsByTagName("phone")[0].childNodes[0].nodeValue + "<br/>" +
-
-                    x[i].getElementsByTagName("salary")[0].childNodes[0].nodeValue + "<br/>"; 
-                    
+                table += "<tr><td>" +
+                    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("address")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("phone")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("mail")[0].childNodes[0].nodeValue +
+                    "</td></tr>";
             }
-            document.getElementById("showemployee").innerHTML = table;
+            document.getElementById("showStudent").innerHTML = table;
         }
 
     </script>
@@ -39,7 +39,7 @@
     <p><button onclick="loadXMLDoc()">Click Me</button></p>
     <p id="p1"></p>
 
-    <table id="showemployee"></table>
+    <center><table id="showStudent" border="1"></table></center>
 </body>
 </html>
 
