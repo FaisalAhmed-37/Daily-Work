@@ -1,0 +1,37 @@
+﻿
+    <!DOCTYPE html>
+
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <script>
+           
+            function loadXMLdoc() {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                       xmlFunction(this);
+                    }
+                };
+                xmlhttp.open("GET", "Exam.xml", true);
+                xmlhttp.send();
+            }
+
+
+            function xmlFunction(xml) {
+                var xmlDoc = xml.responseXML;
+                document.getElementById('p1').innerHTML = "Name: " + xmlDoc.getElementsByTagName("ExamName")[0].childNodes[0].nodeValue + "<br/><br/>" +
+                                                          "TotalMark: " + xmlDoc.getElementsByTagName("TotalMark")[0].childNodes[0].nodeValue + "<br/><br/>" +
+                                                          "ObtainMark: " + xmlDoc.getElementsByTagName("ObtainMark")[0].childNodes[0].nodeValue + "<br/><br/>" +
+                                                          "ExamTropic: " + xmlDoc.getElementsByTagName("ExamTropic")[0].childNodes[0].nodeValue + "<br/><br/>" +
+                                                          "ExamDate: " + xmlDoc.getElementsByTagName("ExamDate")[0].childNodes[0].nodeValue;
+                    
+                
+            }
+        </script>
+    </head>
+    <body>
+        <button id="btn1" onclick="loadXMLdoc()">Click hare</button>
+        <p id="p1"></p>
+    </body>
+</html>

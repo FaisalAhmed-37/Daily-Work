@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p id="p1">
+    </p>
+        <script>
+           //xmlLoad();
+            //function xmlLoad() {
+            var xyz = new XMLHttpRequest();
+                xyz.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        ShowData(this);
+                    }
+                };
+                xyz.open('GET', 'Test.xml', true);
+                xyz.send();
+           // }
+
+            function ShowData(abc) {
+                var res = abc.responseXML;
+                document.getElementById("p1").innerHTML = res.getElementsByTagName('Faisal')[0].childNodes[0].nodeValue + "<br/>" +
+                    res.getElementsByTagName('Adresss')[0].childNodes[0].nodeValue + "<br/>" +
+                    res.getElementsByTagName('Phone')[0].childNodes[0].nodeValue + "<br/>" +
+                    res.getElementsByTagName('Mail')[0].childNodes[0].nodeValue;
+            }
+
+        </script>
+   
+</body>
+</html>

@@ -1,0 +1,6 @@
+<!ELEMENT school (student)*>
+<!ATTLIST student sid CDATA "s1">
+<!ELEMENT student (name, class)>
+<!ELEMENT name (#PCDATA)*>
+<!ELEMENT class (#PCDATA)*>
+

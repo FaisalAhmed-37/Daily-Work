@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE school SYSTEM "Student.dtd">
+<school>
+	<student sid="s1">
+       		 <name>Faisal</name>
+       		 <class>Ten</class>    
+	</student>
+	<student sid="s2">
+       		 <name>Khan</name>
+       		 <class>Nine</class>
+       
+	</student>
+</school>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE student SYSTEM "student.dtd">
+
+<student>
+<Exam eid="e1">
+          <ExamName>Monthly Exam</ExamName>
+          <TotalMark>100</TotalMark>
+          <ObtainMark>60</ObtainMark>
+          <ExamTropic>Test Exam</ExamTropic>
+          <ExamDate>01/02/18</ExamDate>
+</Exam>
+
+<Exam eid="e2">
+          <ExamName>Monthly Exam</ExamName> 
+          <TotalMark>100</TotalMark>
+          <ObtainMark>80</ObtainMark>
+          <ExamTropic>Monthly Exam</ExamTropic>
+          <ExamDate>01/02/18</ExamDate>
+</Exam>
+
+<Exam eid="e3">
+          <ExamName>Monthly Exam</ExamName>
+          <TotalMark>100</TotalMark>
+          <ObtainMark>70</ObtainMark>
+          <ExamTropic>Final Exam</ExamTropic>
+          <ExamDate>01/02/18</ExamDate>
+</Exam>
+</student>

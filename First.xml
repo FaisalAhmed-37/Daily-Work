@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<school>
+  <student sid="1">
+    <name>Faisal</name>
+    <class>Ten</class>
+  </student>
+  <student sid="2">
+    <name>Rahim</name>
+    <class>Nine</class>
+  </student>
+  <student sid="3">
+    <name>karim</name>
+    <class>Eight</class>
+  </student>
+</school>

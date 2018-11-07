@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE office [
+  <!ELEMENT office (employee)*>
+  <!ATTLIST employee eid CDATA "e1">
+  <!ELEMENT employee (id,name,address,phoneNo,salary)>
+  <!ELEMENT id (#PCDATA)*>
+  <!ELEMENT name (#PCDATA)*>
+  <!ELEMENT address (#PCDATA)*>
+  <!ELEMENT phoneNo (#PCDATA)*>
+  <!ELEMENT salary (#PCDATA)*>
+]>
+<office>
+  <employee eid="e1">
+    <id>01</id>
+    <name>Faisal</name>
+    <address>Dhaka</address>
+    <phoneNo>01970254545</phoneNo>
+    <salary>50,000</salary>
+  </employee>
+  
+  <employee eid="e2">
+    <id>02</id>
+    <name>Kajal</name>
+    <address>Rangpur</address>
+    <phoneNo>01970254545</phoneNo>
+    <salary>60,000</salary>
+  </employee>
+  
+  <employee eid="e3">
+    <id>03</id>
+    <name>Ruhul</name>
+    <address>Bogura</address>
+    <phoneNo>01970254545</phoneNo>
+    <salary>40,000</salary>
+  </employee>
+  
+  <employee eid="4">
+    <id>04</id>
+    <name>Ajad</name>
+    <address>Chadpur</address>
+    <phoneNo>01970254545</phoneNo>
+    <salary>2500</salary>
+  </employee>
+  
+</office>
